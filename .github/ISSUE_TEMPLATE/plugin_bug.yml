@@ -1,7 +1,6 @@
 name: Plugin issue
 description: Report a problem with a plugin
 labels: ["bug", "plugins", "waits for triage"]
-title: ""
 body:
   - type: textarea
     id: desc
