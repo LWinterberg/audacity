@@ -91,6 +91,12 @@ public:
    wxPen selectedPen;
    wxPen samplePen;
    wxPen rmsPen;
+   wxPen samplePen2;
+   wxPen rmsPen2;
+   wxPen samplePen3;
+   wxPen rmsPen3;
+   wxPen samplePen4;
+   wxPen rmsPen4;
    wxPen muteRmsPen;
    wxPen selsamplePen;
    wxPen muteSamplePen;
