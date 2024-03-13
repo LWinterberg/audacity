@@ -150,6 +150,9 @@ void Grabber::DrawGrabber( wxDC & dc )
       r.Offset(0, 1);
    }
 
+   // 2-bar toolbars and larger get padding
+   int padding = r.GetHeight() > 32 ? 14 : 0;
+
    // Cache
    left = r.GetLeft();
    right = r.GetRight();
@@ -164,7 +167,7 @@ void Grabber::DrawGrabber( wxDC & dc )
       AColor::Light(&dc, false);
    }
 
-   for (y = top; y < bottom; y += 4) {
+   for (y = top + padding; y < bottom - padding; y += 4) {
       AColor::Line(dc, left, y, right, y);
    }
 
@@ -176,7 +179,7 @@ void Grabber::DrawGrabber( wxDC & dc )
       AColor::Dark(&dc, false);
    }
 
-   for (y = top + 1; y <= bottom; y += 4) {
+   for (y = top + padding +1; y <= bottom - padding; y += 4) {
       AColor::Line(dc, left, y, right, y);
    }
 }
