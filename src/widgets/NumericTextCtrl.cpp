@@ -452,7 +452,7 @@ bool NumericTextCtrl::Layout()
 
    // Draw the background bitmap - it contains black boxes where
    // all of the digits go and all of the other text
-
+   wxPen Pen;
    wxBrush Brush;
 
    mBackgroundBitmap = std::make_unique<wxBitmap>(mWidth + mButtonWidth, mHeight,24);
@@ -485,8 +485,10 @@ bool NumericTextCtrl::Layout()
    if (mMenuEnabled) {
       wxRect r(mWidth, 0, mButtonWidth - 1, mHeight - 1);
       AColor::Bevel(memDC, true, r);
-      memDC.SetBrush(*wxBLACK_BRUSH);
-      memDC.SetPen(*wxBLACK_PEN);
+      theTheme.SetPenColour( Pen, clrTimeFont );
+      theTheme.SetBrushColour( Brush, clrTimeFont );
+      memDC.SetPen(Pen);
+      memDC.SetBrush(Brush);
       AColor::Arrow(memDC,
                     mWidth + 1,
                     (mHeight / 2) - 2,
