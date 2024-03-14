@@ -265,18 +265,10 @@ void AColor::DrawFocus(wxDC & dc, wxRect & rect)
 
 void AColor::Bevel(wxDC & dc, bool up, const wxRect & r)
 {
-   if (up)
-      AColor::Light(&dc, false);
-   else
-      AColor::Dark(&dc, false);
+   AColor::Dark(&dc, false);
 
    AColor::Line(dc, r.x, r.y, r.x + r.width, r.y);
    AColor::Line(dc, r.x, r.y, r.x, r.y + r.height);
-
-   if (!up)
-      AColor::Light(&dc, false);
-   else
-      AColor::Dark(&dc, false);
 
    AColor::Line(dc, r.x + r.width, r.y, r.x + r.width, r.y + r.height);
    AColor::Line(dc, r.x, r.y + r.height, r.x + r.width, r.y + r.height);
