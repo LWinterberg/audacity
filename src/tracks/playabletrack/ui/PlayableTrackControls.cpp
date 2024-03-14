@@ -27,16 +27,21 @@ namespace {
 
 void GetNarrowMuteHorizontalBounds( const wxRect & rect, wxRect &dest )
 {
-   dest.x = rect.x;
-   dest.width = rect.width / 2 + 1;
+   constexpr int padding = 2;
+   dest.x = rect.x + padding;
+   dest.width = rect.width / 2 - 1.5 * padding;
+
+   // 2      50   -1 [solo]
+   // 2 [mute] 51
 }
 
 void GetNarrowSoloHorizontalBounds( const wxRect & rect, wxRect &dest )
 {
    wxRect muteRect;
+   constexpr int padding = 2;
    GetNarrowMuteHorizontalBounds( rect, muteRect );
-   dest.x = rect.x + muteRect.width;
-   dest.width = rect.width - muteRect.width + TitleSoloBorderOverlap;
+   dest.x = rect.x + muteRect.width + 2 * padding;
+   dest.width = rect.width - dest.x + 1.5 * padding;
 }
 
 void GetEffectsBounds( const wxRect & rect, wxRect &dest )

@@ -14,8 +14,6 @@ Paul Licameli split from TrackInfo.h
 
 class wxPoint;
 
-static const int TitleSoloBorderOverlap = 1;
-
 namespace CommonTrackInfo
 {
    using TCPLine = TrackInfo::TCPLine;
