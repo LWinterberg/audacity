@@ -130,17 +130,6 @@ void Grabber::DrawGrabber( wxDC & dc )
    if( mAsSpacer )
       r.width -= 1;
 
-#ifndef __WXMAC__
-
-   // Add a box
-   r.width -= 1;
-   r.height -= 1;
-   AColor::Bevel(dc, !mPressed, r);
-   r.width += 1;
-   r.height += 1;
-
-#endif
-
    // No bumps in a spacer grabber.
    if( mAsSpacer )
       return;
@@ -151,7 +140,7 @@ void Grabber::DrawGrabber( wxDC & dc )
    }
 
    // 2-bar toolbars and larger get padding
-   int padding = r.GetHeight() > 32 ? 10 : 2;
+   int padding = r.GetHeight() > 32 ? 2 : 2;
 
    // Cache
    left = r.GetLeft();
@@ -167,7 +156,7 @@ void Grabber::DrawGrabber( wxDC & dc )
       AColor::Dark(&dc, false);
    }
 
-   for (y = top + padding; y < bottom - padding; y += 4) {
+   for (y = top + padding; y < bottom - padding; y += 6) {
       AColor::Line(dc, left, y, right, y);
    }
 }

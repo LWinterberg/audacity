@@ -331,29 +331,7 @@ wxColour AColor::Blend( const wxColour & c1, const wxColour & c2 )
 
 void AColor::BevelTrackInfo(wxDC & dc, bool up, const wxRect & r, bool highlight)
 {
-#ifndef EXPERIMENTAL_THEMING
    Bevel( dc, up, r );
-#else
-   // Note that the actually drawn rectangle extends one pixel right of and
-   // below the given
-
-   wxColour col;
-   col = Blend( theTheme.Colour( clrTrackInfo ), up ? wxColour( 255,255,255):wxColour(0,0,0));
-
-   wxPen pen( highlight ? uglyPen : col );
-   dc.SetPen( pen );
-
-   dc.DrawLine(r.x, r.y, r.x + r.width, r.y);
-   dc.DrawLine(r.x, r.y, r.x, r.y + r.height);
-
-   col = Blend( theTheme.Colour( clrTrackInfo ), up ? wxColour(0,0,0): wxColour(255,255,255));
-
-   pen.SetColour( col );
-   dc.SetPen( highlight ? uglyPen : pen );
-
-   dc.DrawLine(r.x + r.width, r.y, r.x + r.width, r.y + r.height);
-   dc.DrawLine(r.x, r.y + r.height, r.x + r.width, r.y + r.height);
-#endif
 }
 
 // Set colour of and select brush and pen.
