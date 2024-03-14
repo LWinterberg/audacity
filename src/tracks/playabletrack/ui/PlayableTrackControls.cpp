@@ -30,9 +30,6 @@ void GetNarrowMuteHorizontalBounds( const wxRect & rect, wxRect &dest )
    constexpr int padding = 2;
    dest.x = rect.x + padding;
    dest.width = rect.width / 2 - 1.5 * padding;
-
-   // 2      50   -1 [solo]
-   // 2 [mute] 51
 }
 
 void GetNarrowSoloHorizontalBounds( const wxRect & rect, wxRect &dest )
