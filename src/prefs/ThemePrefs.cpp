@@ -57,19 +57,10 @@ BEGIN_EVENT_TABLE(ThemePrefs, PrefsPanel)
    EVT_BUTTON(idSaveThemeAsCode,     ThemePrefs::OnSaveThemeAsCode)
 END_EVENT_TABLE()
 
+//this used to be useful for blend theme options
 static bool ConfirmSave()
 {
-   if (!GUIBlendThemes.Read())
-      return true;
-
-   using namespace BasicUI;
-   const auto message = Verbatim(
-"\"Blend system and Audacity theme\" in Interface Preferences was on.\n"
-"This may cause images to to be re-saved with slight changes of color."
-   );
-
-   return MessageBoxResult::Cancel != ShowMessageBox(message,
-      MessageBoxOptions{}.CancelButton().IconStyle(Icon::Warning));
+   return true;
 }
 
 ThemePrefs::ThemePrefs(wxWindow * parent, wxWindowID winid)
