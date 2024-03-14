@@ -151,7 +151,7 @@ void Grabber::DrawGrabber( wxDC & dc )
    }
 
    // 2-bar toolbars and larger get padding
-   int padding = r.GetHeight() > 32 ? 14 : 0;
+   int padding = r.GetHeight() > 32 ? 10 : 2;
 
    // Cache
    left = r.GetLeft();
@@ -159,27 +159,15 @@ void Grabber::DrawGrabber( wxDC & dc )
    top = r.GetTop();
    bottom = r.GetBottom();
 
-   // Draw the raised bumps
+   // Draw the bumps
    if (mPressed) {
-      AColor::Dark(&dc, false);
+      AColor::Light(&dc, false);
    }
    else {
-      AColor::Light(&dc, false);
+      AColor::Dark(&dc, false);
    }
 
    for (y = top + padding; y < bottom - padding; y += 4) {
-      AColor::Line(dc, left, y, right, y);
-   }
-
-   // Draw the pushed bumps
-   if (mPressed) {
-      AColor::Light(&dc, false);
-   }
-   else {
-      AColor::Dark(&dc, false);
-   }
-
-   for (y = top + padding +1; y <= bottom - padding; y += 4) {
       AColor::Line(dc, left, y, right, y);
    }
 }
