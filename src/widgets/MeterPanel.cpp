@@ -573,7 +573,7 @@ void MeterPanel::OnPaint(wxPaintEvent & WXUNUSED(event))
       // Draw the meter bars at maximum levels
       for (unsigned int i = 0; i < mNumBars; i++)
       {
-                  // Cache bar rect
+         // Cache bar rect
          wxRect r = mBar[i].r;
 
          if (mGradient)
@@ -1594,7 +1594,10 @@ void MeterPanel::DrawMeterBar(wxDC &dc, MeterBar *bar)
 
    // Setup for erasing the background
    dc.SetPen(*wxTRANSPARENT_PEN);
-   dc.SetBrush(mMeterDisabled ? mDisabledBkgndBrush : mBkgndBrush);
+   wxBrush newbrush;
+   newbrush.SetColour( theTheme.Colour(clrRulerBackground) ); 
+   //dc.SetBrush(mMeterDisabled ? mDisabledBkgndBrush : mBkgndBrush);
+   dc.SetBrush(newbrush);
 
    if (mGradient)
    {
