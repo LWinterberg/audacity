@@ -33,7 +33,7 @@
           MeterOutputClipBrush: #ff3535;
            MeterOutputLightPen: #99ff99;
             MeterOutputDarkPen: #3da43d;
-               RulerBackground: #E0E1E5;
+               RulerBackground: #E0E1E5; /* loop background*/
                      AxisLines: #0000ff;
                     GraphLines: #6e6edc;
                  ResponseLines: #00ff00;
@@ -51,8 +51,8 @@
              RulerRecordingPen: #808080;
             RulerPlaybackBrush: #be8181;
               RulerPlaybackPen: #b0001c;
-                      TimeFont: #ffffff;
-                      TimeBack: #000000;
+                      TimeFont: #000000;
+                      TimeBack: #F0F1F5;
                  TimeFontFocus: #000000;
                  TimeBackFocus: #85A7EB;
           LabelTextNormalBrush: #bebef0;
@@ -66,10 +66,10 @@
                    TrackFocus1: #85A7EB;
                    TrackFocus2: #85A7EB;
                      SnapGuide: #ffff00;
-                     TrackInfo: #f7f9ff;
+                     TrackInfo: #ffffff;
              TrackInfoSelected: #F0F1F5;
-                         Light: #f7f9ff;
-                        Medium: #f7f9ff;
+                         Light: #ffffff;
+                        Medium: #ffffff;
                           Dark: #c3c3c3;
                  LightSelected: #c6c6c6;
                 MediumSelected: #c8d0df;
@@ -89,7 +89,7 @@
                    GraphLabels: #000000;
              SpectroBackground: #ffff14;
                     ScrubRuler: #e4e4e4;
-                     TimeHours: #000000;
+                     TimeHours: #F0F1F5;
                       FocusBox: #ffff14;
                  TrackNameText: #ffff14;
                      MidiZebra: #808080;
