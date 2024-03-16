@@ -836,7 +836,7 @@ wxListCtrl * ShuttleGuiBase::AddListControlReportMode(
    SetProportions( 1 );
    mpWind = pListCtrl = safenew wxListCtrl(GetParent(), miId,
       wxDefaultPosition, wxSize(230,120),//wxDefaultSize,
-      GetStyle( wxLC_REPORT | wxLC_HRULES | wxLC_VRULES | wxSUNKEN_BORDER ));
+      GetStyle( wxLC_REPORT | wxLC_HRULES | wxLC_VRULES ));
 //   pListCtrl->SetMinSize( wxSize( 120,150 ));
    UpdateSizers();
 
