@@ -1,7 +1,7 @@
 .modernTheme {
-                         Blank: #61626C;
-                    Unselected: #B8B8B8;
-                      Selected: #ebf2ff;
+                         Blank: #999da6;
+                    Unselected: #ffffff;
+                      Selected: #b7bdcb;
                         Sample: #3232c8;
                        Sample2: #4A88E4;
                        Sample3: #CA614A;
@@ -67,7 +67,7 @@
                    TrackFocus2: #85A7EB;
                      SnapGuide: #ffff00;
                      TrackInfo: #ffffff;
-             TrackInfoSelected: #F0F1F5;
+             TrackInfoSelected: #ffffff;
                          Light: #ffffff;
                         Medium: #ffffff;
                           Dark: #c3c3c3;
@@ -80,7 +80,7 @@
                 ProgressNotYet: #ffffff;
                    SyncLockSel: #c0c0c0;
                 SelTranslucent: #ff3535;
-                 BlankSelected: #d5e3ff;
+                 BlankSelected: #6e7481;
                    SliderLight: #ffffff;
                     SliderMain: #a0a0a0;
                     SliderDark: #a0a0a0;
@@ -106,7 +106,7 @@
                    Spectro4Sel: #bf0000;
                    Spectro5Sel: #bfbfbf;
       ClipAffordanceOutlinePen: #000000;
- ClipAffordanceUnselectedBrush: #dbdbdb;
+ ClipAffordanceUnselectedBrush: #dbdbdb; /*also loop color (disabled)*/
    ClipAffordanceSelectedBrush: #ededed;
           ClipAffordanceStroke: #ffffff;
        LabelTrackTextSelection: #b7cae2;
