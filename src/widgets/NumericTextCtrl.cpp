@@ -354,7 +354,7 @@ wxSize NumericTextCtrl::ComputeSizing(bool update, wxCoord boxW, wxCoord boxH)
    }
 
    // The label font should be a little smaller
-   std::unique_ptr<wxFont> labelFont = std::make_unique<wxFont>(fontSize - 1, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
+   std::unique_ptr<wxFont> labelFont = std::make_unique<wxFont>(std::max(fontSize - 6,8), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
 
    // Use the label font for all remaining measurements since only non-digit text is left
    dc.SetFont(*labelFont);
