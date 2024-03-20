@@ -14,7 +14,6 @@
                           Rms3: #4BC84B;
                           Rms4: #646464;
                        MuteRms: #888890;
-                        Shadow: #949494;
                AboutBackground: #ffffff;
                 TrackPanelText: #000000;
                 LabelTrackText: #000000;
