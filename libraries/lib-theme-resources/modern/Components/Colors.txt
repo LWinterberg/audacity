@@ -60,10 +60,10 @@
                    TrackFocus2: #677ce4;
                      SnapGuide: #ffff00;
                      TrackInfo: #f0f1f5;
-             TrackInfoSelected: #ffffff;
+             TrackInfoSelected: #f8f8f9;
                          Light: #f0f1f5;
                         Medium: #f8f8f9;
-                          Dark: #dfdfe4;
+                          Dark: #f8f8f9;
                  LightSelected: #c6c6c6;
                 MediumSelected: #c8d0df;
                   DarkSelected: #9fbfff;
