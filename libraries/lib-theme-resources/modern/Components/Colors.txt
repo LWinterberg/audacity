@@ -59,7 +59,7 @@
                    TrackFocus1: #677ce4;
                    TrackFocus2: #677ce4;
                      SnapGuide: #ffff00;
-                     TrackInfo: #ffffff;
+                     TrackInfo: #f0f1f5;
              TrackInfoSelected: #ffffff;
                          Light: #f0f1f5;
                         Medium: #f8f8f9;
