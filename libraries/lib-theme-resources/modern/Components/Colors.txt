@@ -20,7 +20,6 @@
                 LabelTrackText: #14151a;
                      MeterPeak: #677ce4;
               MeterDisabledPen: #dcdde4;
-            MeterDisabledBrush: #cfd1d9;
                  MeterInputPen: #ef476f;
                MeterInputBrush: #ef476f;
             MeterInputRMSBrush: #ff4c76;
