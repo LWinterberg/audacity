@@ -424,5 +424,5 @@ from there.  Audacity will look for a file called "Pause.png".
    DEFINE_COLOUR( clrBeatFillWeakSelBrush, wxColour( 0xDC, 0xDC, 0xDC ), wxT("BeatFillWeakSelBrush") );
 
    DEFINE_COLOUR( clrLoopEnabled,          wxColour( 93,  65,  93),   wxT("LoopEnabled") );
-   DEFINE_COLOUR( clrLoopDisabled,         wxColour( 93,  65,  93),   wxT("LoopDisabled") );
+   DEFINE_COLOUR( clrLoopDisabled,         wxColour( 93,  65,  93),   wxT("LoopNotEnabled") );
  

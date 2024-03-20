@@ -118,5 +118,5 @@
         BeatFillStrongSelBrush: #6c869e;
           BeatFillWeakSelBrush: #708aa2;
                    LoopEnabled: #E0E1E5; 
-                  LoopDisabled: #c2cbf4;
+                LoopNotEnabled: #c2cbf4;
 }
