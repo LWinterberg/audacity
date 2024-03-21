@@ -275,7 +275,7 @@ void WaveTrackAffordanceControls::Draw(TrackPanelDrawingContext& context, const 
         auto track = FindTrack();
         const auto artist = TrackArtist::Get(context);
 
-        TrackArt::DrawBackgroundWithSelection(context, rect, track.get(), artist->blankSelectedBrush, artist->blankBrush);
+        TrackArt::DrawBackgroundWithSelection(context, rect, track.get(), artist->blankSelectedBrush, artist->clipAffordanceBackgroundBrush);
 
         mVisibleIntervals.clear();
 

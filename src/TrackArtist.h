@@ -80,6 +80,7 @@ public:
    wxBrush muteSampleBrush;
    wxBrush blankSelectedBrush;
    wxBrush envelopeBackgroundBrush;
+   wxBrush clipAffordanceBackgroundBrush;
    wxPen blankPen;
    wxPen unselectedPen;
    wxPen selectedPen;

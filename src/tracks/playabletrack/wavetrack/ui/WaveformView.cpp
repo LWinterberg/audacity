@@ -965,7 +965,7 @@ void WaveformView::DoDraw(TrackPanelDrawingContext &context, size_t channel,
    const bool dB = !WaveformSettings::Get(track).isLinear();
 
    const auto &blankSelectedBrush = artist->blankSelectedBrush;
-   const auto &blankBrush = artist->beatWeakBrush;
+   const auto &blankBrush = artist->blankBrush;
    TrackArt::DrawBackgroundWithSelection(
       context, rect, &track, blankSelectedBrush, blankBrush );
 
