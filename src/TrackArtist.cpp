@@ -55,6 +55,7 @@ TrackArtist::TrackArtist( TrackPanel *parent_ )
 {
    mdBrange = DecibelScaleCutoff.GetDefault();
    mShowClipping = false;
+   mShowRMS = true;
    mSampleDisplay = 1;// Stem plots by default.
 
    SetColours(0);
@@ -101,25 +102,27 @@ void TrackArtist::SetColours( int iColorIndex)
    theTheme.SetBrushColour( beatWeakBrush, clrBeatFillWeakBrush );
    theTheme.SetBrushColour( beatStrongSelBrush, clrBeatFillStrongSelBrush );
    theTheme.SetBrushColour( beatWeakSelBrush, clrBeatFillWeakSelBrush );
-   
+
+   mShowRMS = gPrefs->Read(wxT("/GUI/ShowRMS"), mShowRMS);
+
    switch( iColorIndex %4 )
    {
       default:
       case 0:
          theTheme.SetPenColour(   samplePen,       clrSample);
-         theTheme.SetPenColour(   rmsPen,          clrRms);
+         theTheme.SetPenColour(   rmsPen,          mShowRMS ? clrRms : clrSample);
          break;
       case 1: // RED
          theTheme.SetPenColour(   samplePen,       clrSample2);
-         theTheme.SetPenColour(   rmsPen,          clrRms2);
+         theTheme.SetPenColour(   rmsPen,          mShowRMS ? clrRms2 : clrSample2);
          break;
       case 2: // GREEN
          theTheme.SetPenColour(   samplePen,       clrSample3);
-         theTheme.SetPenColour(   rmsPen,          clrRms3);
+         theTheme.SetPenColour(   rmsPen,          mShowRMS ? clrRms3 : clrSample3);
          break;
       case 3: //BLACK
          theTheme.SetPenColour(   samplePen,       clrSample4);
-         theTheme.SetPenColour(   rmsPen,          clrRms4);
+         theTheme.SetPenColour(   rmsPen,          mShowRMS ? clrRms4 : clrSample4);
          break;
 
    }
@@ -129,6 +132,8 @@ void TrackArtist::UpdateSelectedPrefs( int id )
 {
    if( id == ShowClippingPrefsID())
       mShowClipping = gPrefs->Read(wxT("/GUI/ShowClipping"), mShowClipping);
+   if( id == ShowRMSPrefsID())
+      mShowRMS = gPrefs->Read(wxT("/GUI/ShowRMS"), mShowRMS);
    if( id == ShowTrackNameInWaveformPrefsID())
       mbShowTrackNameInTrack = gPrefs->ReadBool(wxT("/GUI/ShowTrackNameInWaveform"), false);
 }
