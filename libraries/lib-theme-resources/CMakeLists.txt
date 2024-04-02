@@ -189,8 +189,8 @@ set( SOURCES
    HighContrastThemeAsCeeCode.h
    LightThemeAsCeeCode.cpp
    LightThemeAsCeeCode.h
-   ModernThemeAsCeeCode.cpp
-   ModernThemeAsCeeCode.h
+   ClassicThemeAsCeeCode.cpp
+   ClassicThemeAsCeeCode.h
    LoadThemeResources.h
    LoadThemeResources.cpp
 )
