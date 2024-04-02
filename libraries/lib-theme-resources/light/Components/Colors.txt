@@ -1,4 +1,4 @@
-.modernTheme {
+.lightTheme {
                          Blank: #585963;
                     Unselected: #dee1ef;
                       Selected: #e7f3ff;

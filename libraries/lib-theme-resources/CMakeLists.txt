@@ -160,10 +160,10 @@ set( IMAGE_LIST
 # One custom command for each theme, invoking the image compiler if the
 # generated header file is out of date with its image and color definitions
 foreach( pair
+   "classic;ClassicThemeAsCeeCode"
    "dark;DarkThemeAsCeeCode"
    "high-contrast;HighContrastThemeAsCeeCode"
    "light;LightThemeAsCeeCode"
-   "modern;ModernThemeAsCeeCode"
 )
    list( POP_FRONT pair theme filename )
    set( THEME_FILES )
