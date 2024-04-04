@@ -19,15 +19,15 @@ class AudacityProject;
 // See big pictorial comment in TrackPanel.cpp for explanation of these numbers
 enum : int {
    // Constants related to x coordinates in the track panel
-   kBorderThickness = 1,
-   kShadowThickness = 1,
+   kBorderThickness = 0,
+   kShadowThickness = 0,
 
    kLeftInset = 4,
    kRightInset = kLeftInset,
    kLeftMargin = kLeftInset + kBorderThickness,
    kRightMargin = kRightInset + kShadowThickness + kBorderThickness,
 
-   kTrackInfoWidth = 100 - kLeftMargin,
+   kTrackInfoWidth = 152 - kLeftMargin,
 };
 
 // The subset of ViewInfo information (other than selection)
