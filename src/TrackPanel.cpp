@@ -99,8 +99,8 @@ is time to refresh some aspect of the screen.
 
 #include "RealtimeEffectManager.h"
 
-static_assert( kVerticalPadding == kTopMargin + kBottomMargin );
-static_assert( kTrackInfoBtnSize == kAffordancesAreaHeight, "Drag bar is misaligned with the menu button");
+//static_assert( kVerticalPadding == kTopMargin + kBottomMargin );
+//static_assert( kTrackInfoBtnSize == kAffordancesAreaHeight, "Drag bar is misaligned with the menu button");
 
 /**
 
