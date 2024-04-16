@@ -211,12 +211,6 @@ void CommonTrackInfo::CloseTitleDrawFunction
 {
    auto dc = &context.dc;
    bool selected = pTrack ? pTrack->GetSelected() : true;
-   {
-      wxRect bev = rect;
-      GetCloseBoxHorizontalBounds( rect, bev );
-      auto target = context.target.get();
-      DrawCloseButton( context, bev, pTrack, target );
-   }
 
    {
       wxRect bev = rect;

@@ -45,10 +45,6 @@ std::vector<UIHandlePtr> CommonTrackControls::HitTest
 
    auto sThis = shared_from_this();
 
-   if (NULL != (result = CloseButtonHandle::HitTest(
-      mCloseHandle, state, rect, this)))
-      results.push_back(result);
-
    if (NULL != (result = MenuButtonHandle::HitTest(
       mMenuHandle, state, rect, sThis)))
       results.push_back(result);

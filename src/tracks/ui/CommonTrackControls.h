@@ -61,7 +61,6 @@ protected:
       TrackPanelDrawingContext &,
       const wxRect &rect, const wxRect &panelRect, unsigned iPass ) override;
 
-   std::weak_ptr<CloseButtonHandle> mCloseHandle;
    std::weak_ptr<MenuButtonHandle> mMenuHandle;
    std::weak_ptr<MinimizeButtonHandle> mMinimizeHandle;
    std::weak_ptr<TrackSelectHandle> mSelectHandle;
