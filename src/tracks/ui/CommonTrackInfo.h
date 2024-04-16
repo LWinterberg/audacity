@@ -42,12 +42,17 @@ namespace CommonTrackInfo
       const Track *pTrack, UIHandle *target);
 
    AUDACITY_DLL_API
-   void CloseTitleDrawFunction
+   void MinimizeTitleDrawFunction
+      ( TrackPanelDrawingContext &context,
+        const wxRect &rect, const Track *pTrack );
+
+AUDACITY_DLL_API
+   void DrawMinimizeButton
       ( TrackPanelDrawingContext &context,
         const wxRect &rect, const Track *pTrack );
 
    AUDACITY_DLL_API
-   void MinimizeSyncLockDrawFunction
+   void SyncLockDrawFunction
       ( TrackPanelDrawingContext &context,
         const wxRect &rect, const Track *pTrack );
 

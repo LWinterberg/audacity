@@ -46,7 +46,7 @@ static const TCPLines &commonTrackTCPLines()
 {
    static const TCPLines theLines{
       { TCPLine::kItemBarButtons, kTrackInfoBtnSize, 0,
-        &CommonTrackInfo::CloseTitleDrawFunction },
+        &CommonTrackInfo::MinimizeTitleDrawFunction },
    };
    return theLines;
 }
@@ -80,7 +80,7 @@ const TrackInfo::TCPLine defaultCommonTrackTCPBottomLines[] = {
    // The '0' avoids impinging on bottom line of TCP
    // Use -1 if you do want to do so.
    { TCPLine::kItemSyncLock | TCPLine::kItemMinimize, kTrackInfoBtnSize, 0,
-     &CommonTrackInfo::MinimizeSyncLockDrawFunction },
+     &CommonTrackInfo::SyncLockDrawFunction },
 };
 TCPLines commonTrackTCPBottomLines{ RANGE(defaultCommonTrackTCPBottomLines) };
 
@@ -205,13 +205,20 @@ void CommonTrackInfo::DrawCloseButton(
    //   bev.Inflate(-1, -1);
 }
 
-void CommonTrackInfo::CloseTitleDrawFunction
+void CommonTrackInfo::MinimizeTitleDrawFunction
 ( TrackPanelDrawingContext &context,
   const wxRect &rect, const Track *pTrack )
 {
+
    auto dc = &context.dc;
    bool selected = pTrack ? pTrack->GetSelected() : true;
 
+   {
+      wxRect bev = rect;
+      GetMinimizeHorizontalBounds( rect, bev );
+      
+      DrawMinimizeButton( context, bev, pTrack );
+   }
    {
       wxRect bev = rect;
       GetTitleBarHorizontalBounds( rect, bev );
@@ -274,16 +281,16 @@ void CommonTrackInfo::CloseTitleDrawFunction
    }
 }
 
-void CommonTrackInfo::MinimizeSyncLockDrawFunction
+
+void CommonTrackInfo::DrawMinimizeButton
 ( TrackPanelDrawingContext &context,
   const wxRect &rect, const Track *pTrack )
 {
    auto dc = &context.dc;
    bool selected = pTrack ? pTrack->GetSelected() : true;
-   bool syncLockSelected = pTrack ? SyncLock::IsSyncLockSelected(pTrack) : true;
    bool minimized =
       pTrack ? ChannelView::Get(*pTrack->GetChannel(0)).GetMinimized() : false;
-   {
+   
       wxRect bev = rect;
       GetMinimizeHorizontalBounds(rect, bev);
       auto target = context.target.get();
@@ -311,9 +318,15 @@ void CommonTrackInfo::MinimizeSyncLockDrawFunction
                     bev.y - 2 + bev.height / 2,
                     10,
                     minimized);
-   }
 
+}
 
+void CommonTrackInfo::SyncLockDrawFunction
+( TrackPanelDrawingContext &context,
+  const wxRect &rect, const Track *pTrack )
+{
+   auto dc = &context.dc;
+   bool syncLockSelected = pTrack ? SyncLock::IsSyncLockSelected(pTrack) : true;
    // Draw the sync-lock indicator if this track is in a sync-lock selected group.
    if (syncLockSelected)
    {
