@@ -216,7 +216,12 @@ void CommonTrackInfo::MinimizeTitleDrawFunction
    {
       wxRect bev = rect;
       GetMinimizeHorizontalBounds( rect, bev );
-      
+      auto target = context.target.get();
+      bool hit = target &&
+         target->FindChannel().get() == dynamic_cast<const Channel*>(pTrack);
+      bool captured = hit && target->IsDragging();
+      bool down = captured && bev.Contains( context.lastState.GetPosition());
+      AColor::Bevel2(*dc, !down, bev, selected, hit);
       DrawMinimizeButton( context, bev, pTrack );
    }
    {
@@ -226,12 +231,10 @@ void CommonTrackInfo::MinimizeTitleDrawFunction
       bool hit = target &&
          target->FindChannel().get() == dynamic_cast<const Channel*>(pTrack);
       bool captured = hit && target->IsDragging();
-      bool down = captured && bev.Contains( context.lastState.GetPosition());
+      
       wxString titleStr =
          pTrack ? pTrack->GetName() : _("Name");
 
-      //bev.Inflate(-1, -1);
-      AColor::Bevel2(*dc, !down, bev, selected, hit);
 
       // Draw title text
       TrackInfo::SetTrackInfoFont(dc);
