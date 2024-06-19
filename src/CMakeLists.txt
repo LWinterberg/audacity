@@ -178,6 +178,8 @@ set( SOURCES
       ProjectWindows.h
       RealtimeEffectPanel.cpp
       RealtimeEffectPanel.h
+      Screenshot.cpp
+      Screenshot.h
       ScrubState.cpp
       ScrubState.h
       SelectUtilities.cpp
@@ -293,6 +295,8 @@ set( SOURCES
       commands/PreferenceCommands.h
       commands/ResponseQueue.cpp
       commands/ResponseQueue.h
+      commands/ScreenshotCommand.cpp
+      commands/ScreenshotCommand.h
       commands/ScriptCommandRelay.cpp
       commands/ScriptCommandRelay.h
       commands/SelectCommand.cpp
