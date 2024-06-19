@@ -39,6 +39,7 @@ ShuttleGui.
 #include "ProgressDialog.h"
 #include "HelpSystem.h"
 #include "AudacityMessageBox.h"
+#include "../widgets/VetoDialogHook.h"
 
 #include <unordered_map>
 
@@ -90,6 +91,10 @@ bool AudacityCommand::ShowInterface(wxWindow *parent, bool WXUNUSED(forceModal))
    mUIDialog->Layout();
    mUIDialog->Fit();
    mUIDialog->SetMinSize(mUIDialog->GetSize());
+
+   // The Screenshot command might be popping this dialog up, just to capture it.
+   if ( VetoDialogHook::Call( mUIDialog ) )
+      return false;
 
    bool res = mUIDialog->ShowModal() != 0;
    return res;

@@ -27,6 +27,7 @@
 #include "HelpSystem.h"
 #include "../widgets/NumericTextCtrl.h"
 #include "AudacityMessageBox.h"
+#include "../widgets/VetoDialogHook.h"
 
 #include <cmath>
 #include <limits>
@@ -678,6 +679,8 @@ namespace {
          .Get< ContrastDialog >( sContrastDialogKey );
 
       contrastDialog->CentreOnParent();
+      if( VetoDialogHook::Call( contrastDialog ) )
+         return;
       contrastDialog->Show();
    }
 }

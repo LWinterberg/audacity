@@ -30,6 +30,7 @@
 #include "../tracks/labeltrack/ui/LabelTrackView.h"
 #include "../tracks/playabletrack/wavetrack/ui/WaveChannelView.h"
 #include "AudacityMessageBox.h"
+#include "../widgets/VetoDialogHook.h"
 #include "../AudioPasteDialog.h"
 #include "BasicUI.h"
 #include "Sequence.h"
@@ -977,6 +978,9 @@ void OnPreferences(const CommandContext &context)
    auto &project = context.project;
 
    GlobalPrefsDialog dialog(&GetProjectFrame(project) /* parent */, &project );
+
+   if( VetoDialogHook::Call( &dialog ) )
+      return;
 
    if (!dialog.ShowModal()) {
       // Canceled
