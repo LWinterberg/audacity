@@ -98,7 +98,8 @@ wxString MakeWhatsNewText()
       << wxT(R"(<img src="memory:whats_new_btn.jpeg" width="263" height="148" /><br></a></p>)")
       << wxT("<h3>") << XO("What's new in Audacity %s").Format(AUDACITY_VERSION_STRING) << wxT("</h3>")
       << wxT("<p>")
-      << XO("Watch the [[%s|release video]] or read the [[https://support.audacityteam.org/additional-resources/changelog|changelog]] to learn more!</p>").Format(WhatsNewURL);
+      << XO("Watch the [[%s|release video]] or read the [[https://support.audacityteam.org/additional-resources/changelog|changelog]] to learn more!</p>").Format(WhatsNewURL)
+      << wxT("<p>We'd like to know what you think! Please take [[https://audacityteam.org/survey|this survey]], it should only take 2-3 minutes!</p>"); //intentionally untranslated; remove or translate next release
 
    return FormatHtmlText(o.GetString());
 }
@@ -128,9 +129,9 @@ WhatsNewDialog::WhatsNewDialog(wxWindow* parent, wxWindowID id)
    : wxDialogWrapper(parent, id, XO("Welcome to Audacity!"))
 {
 #if defined(__WXOSX__)
-   SetSize(WindowWidth, 400);
+   SetSize(WindowWidth, 430);
 #else
-   SetSize(FromDIP(wxSize(WindowWidth, 430)));
+   SetSize(FromDIP(wxSize(WindowWidth, 460)));
 #endif
 
 #if defined(__WXMSW__)
