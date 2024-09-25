@@ -1326,7 +1326,6 @@ msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "Nažalost, priključak Vamp nije bilo moguće učitati."
 msgstr[1] "Nažalost, priključak Vamp nije bilo moguće učitati."
 msgstr[2] "Nažalost, priključak Vamp nije bilo moguće učitati."
-msgstr[3] "Nažalost, priključak Vamp nije bilo moguće učitati."
 
 #: libraries/lib-module-manager/PluginManager.cpp
 #, fuzzy
@@ -6191,7 +6190,6 @@ msgid_plural "%d minutes ago"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy, c-format
@@ -6200,7 +6198,6 @@ msgid_plural "%d hours ago"
 msgstr[0] "Trajanje tona:"
 msgstr[1] "Trajanje tona:"
 msgstr[2] "Trajanje tona:"
-msgstr[3] "Trajanje tona:"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy
@@ -9349,7 +9346,6 @@ msgid_plural "%d hours"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9358,7 +9354,6 @@ msgid_plural "%d minutes"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -15037,7 +15032,6 @@ msgid_plural "%s %s, %d of %d clips %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -15066,7 +15060,6 @@ msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -15081,7 +15074,6 @@ msgid_plural "%s, %d of %d clips %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -19681,7 +19673,6 @@ msgid_plural "%s, %d of %d clips"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp

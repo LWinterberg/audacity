@@ -18833,7 +18833,7 @@ msgstr "Silenciar/Sonorizar Faixa"
 msgid "%s, %d of %d clip"
 msgid_plural "%s, %d of %d clips"
 msgstr[0] "%s, %d de %d clip"
-msgstr[1] ""
+msgstr[1] "%s, %d de %d clip"
 msgstr[2] "%s, %d de %d clip"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp

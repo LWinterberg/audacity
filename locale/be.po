@@ -5,17 +5,15 @@ msgstr ""
 "Project-Id-Version: audacity 3.6.0\n"
 "Report-Msgid-Bugs-To: audacity-translation@lists.sourceforge.net\n"
 "POT-Creation-Date: 2024-08-01 14:17+0300\n"
-"PO-Revision-Date: 2010-04-19 16:57+0300\n"
+"PO-Revision-Date: 2024-09-24 15:13+0200\n"
 "Last-Translator: FatCow <zhr@tut.by>\n"
 "Language-Team: Patricia Clausnitzer <by.marcis@gmail.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Belarusian\n"
-"X-Poedit-Country: BELARUS\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: libraries/lib-audio-devices/AudioIOBase.cpp
@@ -1352,9 +1350,10 @@ msgstr "Немагчыма выдаліць '%s'"
 msgctxt "plug-ins"
 msgid "Enable this plug-in?\n"
 msgid_plural "Enable these plug-ins?\n"
-msgstr[0] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP."
-msgstr[1] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP."
-msgstr[2] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP."
+msgstr[0] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP.\n"
+msgstr[1] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP.\n"
+msgstr[2] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP.\n"
+msgstr[3] "Выбачыце, не атрымалася загрузіць пашырэнне VAMP.\n"
 
 #: libraries/lib-module-manager/PluginManager.cpp
 #, fuzzy
@@ -6254,14 +6253,16 @@ msgid_plural "%d minutes ago"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy, c-format
 msgid "one hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "Працягласць сігналу:"
-msgstr[1] "Працягласць сігналу:"
-msgstr[2] "Працягласць сігналу:"
+msgstr[1] "Працягласць сігналу:%d"
+msgstr[2] "Працягласць сігналу:%d"
+msgstr[3] "%d"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy
@@ -9436,6 +9437,7 @@ msgid_plural "%d hours"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9444,6 +9446,7 @@ msgid_plural "%d minutes"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -15194,6 +15197,7 @@ msgid_plural "%s %s, %d of %d clips %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -15222,6 +15226,7 @@ msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -15236,6 +15241,7 @@ msgid_plural "%s, %d of %d clips %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -19859,6 +19865,7 @@ msgid_plural "%s, %d of %d clips"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp

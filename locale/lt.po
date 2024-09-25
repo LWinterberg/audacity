@@ -1333,6 +1333,7 @@ msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "Įjungti šį papildinį?"
 msgstr[1] "Įjungti šiuos papildinius?"
 msgstr[2] "Įjungti šiuos papildinius?"
+msgstr[3] "Įjungti šiuos papildinius?"
 
 #: libraries/lib-module-manager/PluginManager.cpp
 msgid "Enable new plug-ins"
@@ -6170,20 +6171,22 @@ msgid "less than 1 minute"
 msgstr "Mažiau nei 1 minutė"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "one minutes ago"
 msgid_plural "%d minutes ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "one minutes ago"
+msgstr[1] "%d minutes ago"
+msgstr[2] "%d minutes ago"
+msgstr[3] "%d minutes ago"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy, c-format
 msgid "one hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "Tono trukmė:"
-msgstr[1] "Tono trukmė:"
-msgstr[2] "Tono trukmė:"
+msgstr[1] "Tono trukmė:%d hours ago"
+msgstr[2] "Tono trukmė:%d hours ago"
+msgstr[3] "Tono trukmė:%d hours ago"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy
@@ -9382,6 +9385,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d valanda"
 msgstr[1] "%d valandos"
 msgstr[2] "%d valandų"
+msgstr[3] "%d valandų"
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9390,6 +9394,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d minutė"
 msgstr[1] "%d minutės"
 msgstr[2] "%d minučių"
+msgstr[3] "%d minučių"
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -15007,12 +15012,13 @@ msgstr ""
 #. clips.
 #.
 #: src/menus/ClipMenus.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "%s %s, %d of %d clip %s"
 msgid_plural "%s %s, %d of %d clips %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s %s, %d of %d clip %s"
+msgstr[1] "%s %s, %d of %d clips %s"
+msgstr[2] "%s %s, %d of %d clips %s"
+msgstr[3] "%s %s, %d of %d clips %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "start"
@@ -15036,9 +15042,10 @@ msgstr "pabaiga"
 #, c-format
 msgid "%s %s and %s %s, %d and %d of %d clip %s"
 msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s %s and %s %s, %d and %d of %d clip %s"
+msgstr[1] "%s %s and %s %s, %d and %d of %d clips %s"
+msgstr[2] "%s %s and %s %s, %d and %d of %d clips %s"
+msgstr[3] "%s %s and %s %s, %d and %d of %d clips %s"
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -15050,9 +15057,10 @@ msgstr[2] ""
 #, c-format
 msgid "%s, %d of %d clip %s"
 msgid_plural "%s, %d of %d clips %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s, %d of %d clip %s"
+msgstr[1] "%s, %d of %d clips %s"
+msgstr[2] "%s, %d of %d clips %s"
+msgstr[3] "%s, %d of %d clips %s"
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -19453,9 +19461,10 @@ msgstr "Užtild&yti/Atitildyti fokusuotą takelį"
 #, c-format
 msgid "%s, %d of %d clip"
 msgid_plural "%s, %d of %d clips"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s, %d of %d clip"
+msgstr[1] "%s, %d of %d clips"
+msgstr[2] "%s, %d of %d clips"
+msgstr[3] "%s, %d of %d clips"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp

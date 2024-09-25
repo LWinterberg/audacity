@@ -1365,7 +1365,7 @@ msgctxt "plug-ins"
 msgid "Enable this plug-in?\n"
 msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "၀မ်းနည်းပါတယ်၊ ပိုင်းလုံး ယန္တရားငယ်ကို ဖွင့်ဖို့ မအောင်မြင်ဘူး။"
-msgstr[1] "၀မ်းနည်းပါတယ်၊ ပိုင်းလုံး ယန္တရားငယ်ကို ဖွင့်ဖို့ မအောင်မြင်ဘူး။"
+
 
 #: libraries/lib-module-manager/PluginManager.cpp
 #, fuzzy
@@ -6347,7 +6347,6 @@ msgstr[1] ""
 msgid "one hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "အသံ ကြာမြင့်ချိန် -"
-msgstr[1] "အသံ ကြာမြင့်ချိန် -"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy

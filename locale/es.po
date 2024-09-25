@@ -1379,6 +1379,7 @@ msgid "Enable this plug-in?\n"
 msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "¿Habilitar este complemento?\n"
 msgstr[1] "¿Habilitar estos complementos?\n"
+msgstr[2] "¿Habilitar estos complementos?\n"
 
 #: libraries/lib-module-manager/PluginManager.cpp
 msgid "Enable new plug-ins"
@@ -6349,6 +6350,7 @@ msgid "one minutes ago"
 msgid_plural "%d minutes ago"
 msgstr[0] "hace un minuto"
 msgstr[1] "hace %d minutos"
+msgstr[2] "hace %d minutos"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, c-format
@@ -6356,6 +6358,7 @@ msgid "one hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "hace una hora"
 msgstr[1] "hace %d horas"
+msgstr[2] "hace %d horas"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 msgid "Modified"
@@ -9661,6 +9664,7 @@ msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d hora"
 msgstr[1] "%d horas"
+msgstr[2] "%d horas"
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9668,6 +9672,7 @@ msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
 msgstr[1] "%d minutos"
+msgstr[2] "%d minutos"
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -15181,6 +15186,7 @@ msgid "%s %s, %d of %d clip %s"
 msgid_plural "%s %s, %d of %d clips %s"
 msgstr[0] "%s %s, %d de %d bloque %s"
 msgstr[1] "%s %s, %d de %d bloques %s"
+msgstr[2] "%s %s, %d de %d bloques %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "start"
@@ -15206,6 +15212,7 @@ msgid "%s %s and %s %s, %d and %d of %d clip %s"
 msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
 msgstr[0] "%s %s y %s %s, %d y %d de %d bloque %s"
 msgstr[1] "%s %s y %s %s, %d y %d de %d bloques %s"
+msgstr[2] "%s %s y %s %s, %d y %d de %d bloques %s"
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -15219,6 +15226,7 @@ msgid "%s, %d of %d clip %s"
 msgid_plural "%s, %d of %d clips %s"
 msgstr[0] "%s, %d de %d bloque %s"
 msgstr[1] "%s, %d de %d bloques %s"
+msgstr[2] "%s, %d de %d bloques %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "Moved clips to the right"
@@ -19434,6 +19442,7 @@ msgid "%s, %d of %d clip"
 msgid_plural "%s, %d of %d clips"
 msgstr[0] "%s, %d de %d bloque"
 msgstr[1] "%s, %d de %d bloques"
+msgstr[2] "%s, %d de %d bloques"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp
@@ -23967,6 +23976,7 @@ msgstr "Heredado"
 #~ msgid_plural "%d of %d clips %s"
 #~ msgstr[0] "%d de %d bloque %s"
 #~ msgstr[1] "%d de %d bloques %s"
+#~ msgstr[2] "%d de %d bloques %s"
 
 #~ msgid "&Loop Play"
 #~ msgstr "Reproducir cíc&licamente"

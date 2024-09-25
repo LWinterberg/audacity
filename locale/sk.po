@@ -1377,6 +1377,7 @@ msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "Povoliť toto rozšírenie?\n"
 msgstr[1] "Povoliť tieto rozšírenia?\n"
 msgstr[2] "Povoliť tieto rozšírenia?\n"
+msgstr[3] "Povoliť tieto rozšírenia?\n"
 
 #: libraries/lib-module-manager/PluginManager.cpp
 msgid "Enable new plug-ins"
@@ -6323,6 +6324,7 @@ msgid_plural "%d minutes ago"
 msgstr[0] "pred minútou"
 msgstr[1] "pred %d minútami"
 msgstr[2] "pred %d minútami"
+msgstr[3] "pred %d minútami"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, c-format
@@ -6331,6 +6333,7 @@ msgid_plural "%d hours ago"
 msgstr[0] "pred jednou hodinou"
 msgstr[1] "pred %d hodinami"
 msgstr[2] "pred %d hodinami"
+msgstr[3] "pred %d hodinami"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 msgid "Modified"
@@ -9610,6 +9613,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d hodina"
 msgstr[1] "%d hodiny"
 msgstr[2] "%d hodín"
+msgstr[3] "%d hodín"
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9618,6 +9622,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d minúta"
 msgstr[1] "%d minúty"
 msgstr[2] "%d minút"
+msgstr[3] "%d minút"
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -15109,6 +15114,7 @@ msgid_plural "%s %s, %d of %d clips %s"
 msgstr[0] "%s %s, %d z %d strihu %s"
 msgstr[1] "%s %s, %d z %d strihov %s"
 msgstr[2] "%s %s, %d z %d strihov %s"
+msgstr[3] "%s %s, %d z %d strihov %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "start"
@@ -15135,6 +15141,7 @@ msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
 msgstr[0] "%s %s a %s %s, %d a %d z %d strihu %s"
 msgstr[1] "%s %s a %s %s, %d a %d z %d strihov %s"
 msgstr[2] "%s %s a %s %s, %d a %d z %d strihov %s"
+msgstr[3] "%s %s a %s %s, %d a %d z %d strihov %s"
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -15149,6 +15156,7 @@ msgid_plural "%s, %d of %d clips %s"
 msgstr[0] "%s, %d z %d strihu %s"
 msgstr[1] "%s, %d z %d strihov %s"
 msgstr[2] "%s, %d z %d strihov %s"
+msgstr[3] "%s, %d z %d strihov %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "Moved clips to the right"
@@ -19345,6 +19353,7 @@ msgid_plural "%s, %d of %d clips"
 msgstr[0] "%s, %d z %d strihu"
 msgstr[1] "%s, %d z %d strihov"
 msgstr[2] "%s, %d z %d strihov"
+msgstr[3] "%s, %d z %d strihov"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp
@@ -24022,6 +24031,7 @@ msgstr "Pravidlá"
 #~ msgstr[0] "%d z %d strihu %s"
 #~ msgstr[1] "%d z %d strihov %s"
 #~ msgstr[2] "%d z %d strihov %s"
+#~ msgstr[3] "%d z %d strihov %s"
 
 #~ msgid "&Loop Play"
 #~ msgstr "Prehrávať v &slučke"

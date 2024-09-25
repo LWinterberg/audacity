@@ -1375,7 +1375,6 @@ msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "Oprostite, učitavanje priključka Vamp nije uspjelo."
 msgstr[1] "Oprostite, učitavanje priključka Vamp nije uspjelo."
 msgstr[2] "Oprostite, učitavanje priključka Vamp nije uspjelo."
-msgstr[3] "Oprostite, učitavanje priključka Vamp nije uspjelo."
 
 #: libraries/lib-module-manager/PluginManager.cpp
 #, fuzzy
@@ -6364,22 +6363,20 @@ msgid "less than 1 minute"
 msgstr ""
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "one minutes ago"
 msgid_plural "%d minutes ago"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "one minutes ago"
+msgstr[1] "%d minutes ago"
+msgstr[2] "%d minutes ago"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy, c-format
 msgid "one hour ago"
 msgid_plural "%d hours ago"
 msgstr[0] "Trajanje zvuka:"
-msgstr[1] "Trajanje zvuka:"
-msgstr[2] "Trajanje zvuka:"
-msgstr[3] "Trajanje zvuka:"
+msgstr[1] "Trajanje zvuka: %d"
+msgstr[2] "Trajanje zvuka: %d"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy
@@ -9604,22 +9601,20 @@ msgid "Less than 1 minute"
 msgstr ""
 
 #: src/ProjectManager.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d hour"
+msgstr[1] "%d hour"
+msgstr[2] "%d hour"
 
 #: src/ProjectManager.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d minute"
+msgstr[1] "%d minutes"
+msgstr[2] "%d minutes"
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -15375,10 +15370,9 @@ msgstr ""
 #, c-format
 msgid "%s %s, %d of %d clip %s"
 msgid_plural "%s %s, %d of %d clips %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%s %s, %d of %d clip %s"
+msgstr[1] "%s %s, %d of %d clips %s"
+msgstr[2] "%s %s, %d of %d clips %s"
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -15401,13 +15395,12 @@ msgstr "Kraj"
 #. clips.
 #.
 #: src/menus/ClipMenus.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "%s %s and %s %s, %d and %d of %d clip %s"
 msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%s %s and %s %s, %d and %d of %d clip %s"
+msgstr[1] "%s %s and %s %s, %d and %d of %d clips %s"
+msgstr[2] "%s %s and %s %s, %d and %d of %d clips %s"
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -15416,13 +15409,12 @@ msgstr[3] ""
 #. last number counts all clips,
 #. last string names a track
 #: src/menus/ClipMenus.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "%s, %d of %d clip %s"
 msgid_plural "%s, %d of %d clips %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%s, %d of %d clip %s"
+msgstr[1] "%s, %d of %d clips %s"
+msgstr[2] "%s, %d of %d clips %s"
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -20010,13 +20002,12 @@ msgstr "Unijemi/odnijemi žarišni zapis"
 #. first number is the position of that clip in a sequence of clips,
 #. second number counts the clips
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelView.cpp
-#, c-format
+#, fuzzy, c-format
 msgid "%s, %d of %d clip"
 msgid_plural "%s, %d of %d clips"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%s, %d of %d clip"
+msgstr[1] "%s, %d of %d clips"
+msgstr[2] "%s, %d of %d clips"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp

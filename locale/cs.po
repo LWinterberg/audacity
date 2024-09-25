@@ -1356,6 +1356,7 @@ msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "Povolit tento přídavný modul?\n"
 msgstr[1] "Povolit tyto přídavné moduly?\n"
 msgstr[2] "Povolit tyto přídavné moduly?\n"
+msgstr[3] "Povolit tyto přídavné moduly?\n"
 
 #: libraries/lib-module-manager/PluginManager.cpp
 msgid "Enable new plug-ins"
@@ -6254,14 +6255,16 @@ msgid_plural "%d minutes ago"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, fuzzy, c-format
 msgid "one hour ago"
 msgid_plural "%d hours ago"
-msgstr[0] "Doba trvání tónu:"
-msgstr[1] "Doba trvání tónu:"
-msgstr[2] "Doba trvání tónu:"
+msgstr[0] "%d"
+msgstr[1] "%d"
+msgstr[2] "%d"
+msgstr[3] "%d"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 msgid "Modified"
@@ -9426,6 +9429,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d hodina"
 msgstr[1] "%d hodiny"
 msgstr[2] "%d hodin"
+msgstr[3] "%d"
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9434,6 +9438,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d minuta"
 msgstr[1] "%d minuty"
 msgstr[2] "%d minut"
+msgstr[3] "%d"
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -14818,12 +14823,13 @@ msgstr "Špatná velikost dat. Nepodařilo se zavést zvuk"
 #. clips.
 #.
 #: src/menus/ClipMenus.cpp
-#, c-format
+#, c-format, fuzzy
 msgid "%s %s, %d of %d clip %s"
 msgid_plural "%s %s, %d of %d clips %s"
 msgstr[0] "%s %s, %d z %d klipů %s"
 msgstr[1] "%s %s, %d z %d klipů %s"
 msgstr[2] "%s %s, %d z %d klipů %s"
+msgstr[3] "%s %s, %d z %d klipů %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "start"
@@ -14850,6 +14856,7 @@ msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
 msgstr[0] "%s %s a %s %s, %d a %d z %d klipů %s"
 msgstr[1] "%s %s a %s %s, %d a %d z %d klipů %s"
 msgstr[2] "%s %s a %s %s, %d a %d z %d klipů %s"
+msgstr[3] "%s %s a %s %s, %d a %d z %d klipů %s"
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -14864,6 +14871,7 @@ msgid_plural "%s, %d of %d clips %s"
 msgstr[0] "%s, %d z %d klipů %s"
 msgstr[1] "%s %d z %d klipů %s"
 msgstr[2] "%s %d z %d klipů %s"
+msgstr[3] "%s %d z %d klipů %s"
 
 #: src/menus/ClipMenus.cpp
 #, fuzzy
@@ -19041,6 +19049,7 @@ msgid_plural "%s, %d of %d clips"
 msgstr[0] "%s, %d z %d klipů"
 msgstr[1] "%s %d z %d klipů"
 msgstr[2] "%s %d z %d klipů"
+msgstr[3] "%s %d z %d klipů"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp
@@ -23520,6 +23529,7 @@ msgstr "Platný"
 #~ msgstr[0] "%d z %d klipů %s"
 #~ msgstr[1] "%d z %d klipů %s"
 #~ msgstr[2] "%d z %d klipů %s"
+#~ msgstr[3] "%d z %d klipů %s"
 
 #~ msgid "&Loop Play"
 #~ msgstr "Přehrávat ve &smyčce"

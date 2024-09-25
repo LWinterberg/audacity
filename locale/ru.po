@@ -1334,6 +1334,7 @@ msgid_plural "Enable these plug-ins?\n"
 msgstr[0] "Включить этот плагин?\n"
 msgstr[1] "Включить эти плагины?\n"
 msgstr[2] "Включить эти плагины?\n"
+msgstr[3] "Включить эти плагины?\n"
 
 #: libraries/lib-module-manager/PluginManager.cpp
 msgid "Enable new plug-ins"
@@ -6150,6 +6151,7 @@ msgid_plural "%d minutes ago"
 msgstr[0] "%d минута назад"
 msgstr[1] "%d минуты назад"
 msgstr[2] "%d минуты назад"
+msgstr[3] "%d минуты назад"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 #, c-format
@@ -6158,6 +6160,7 @@ msgid_plural "%d hours ago"
 msgstr[0] "%d час назад"
 msgstr[1] "%d часа назад"
 msgstr[2] "%d часа назад"
+msgstr[3] "%d часа назад"
 
 #: modules/sharing/mod-cloud-audiocom/ui/dialogs/ProjectsListDialog.cpp
 msgid "Modified"
@@ -9304,6 +9307,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d час"
 msgstr[1] "%d часа"
 msgstr[2] "%d часа"
+msgstr[3] "%d часа"
 
 #: src/ProjectManager.cpp
 #, c-format
@@ -9312,6 +9316,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d минута"
 msgstr[1] "%d минуты"
 msgstr[2] "%d минуты"
+msgstr[3] "%d минуты"
 
 #. i18n-hint: A time in hours and minutes. Only translate the "and".
 #: src/ProjectManager.cpp
@@ -14664,6 +14669,7 @@ msgid_plural "%s %s, %d of %d clips %s"
 msgstr[0] "%s %s, %d из %d клипа %s"
 msgstr[1] "%s %s, %d из %d клипов %s"
 msgstr[2] "%s %s, %d из %d клипов %s"
+msgstr[3] "%s %s, %d из %d клипов %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "start"
@@ -14690,6 +14696,7 @@ msgid_plural "%s %s and %s %s, %d and %d of %d clips %s"
 msgstr[0] "%s %s и %s %s, %d и %d из %d клипа %s"
 msgstr[1] "%s %s и %s %s, %d и %d из %d клипов %s"
 msgstr[2] "%s %s и %s %s, %d и %d из %d клипов %s"
+msgstr[3] "%s %s и %s %s, %d и %d из %d клипов %s"
 
 #. i18n-hint:
 #. first string is the name of a clip,
@@ -14704,6 +14711,7 @@ msgid_plural "%s, %d of %d clips %s"
 msgstr[0] "%s, %d из %d клипа %s"
 msgstr[1] "%s, %d из %d клипов %s"
 msgstr[2] "%s, %d из %d клипов %s"
+msgstr[3] "%s, %d из %d клипов %s"
 
 #: src/menus/ClipMenus.cpp
 msgid "Moved clips to the right"
@@ -18839,6 +18847,7 @@ msgid_plural "%s, %d of %d clips"
 msgstr[0] "%s, %d из %d клипа"
 msgstr[1] "%s, %d из %d клипов"
 msgstr[2] "%s, %d из %d клипов"
+msgstr[3] "%s, %d из %d клипов"
 
 #: src/tracks/playabletrack/wavetrack/ui/WaveChannelViewConstants.cpp
 #: src/tracks/playabletrack/wavetrack/ui/WaveTrackControls.cpp
