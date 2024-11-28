@@ -57,7 +57,7 @@ StyledDialogView {
                 id: logo
                 Layout.alignment: Qt.AlignHCenter
 
-                source: "qrc:/qml/resources/mu_logo.svg"
+                source: "qrc:/qml/resources/audacity.svg"
                 sourceSize: Qt.size(100, 100)
 
                 MouseArea {
