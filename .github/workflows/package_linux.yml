@@ -52,7 +52,7 @@ env:
 jobs:
   generate_source_tarball:
     name: Source Tarball
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout Audacity
       uses: actions/checkout@v2
@@ -87,9 +87,9 @@ jobs:
           dir: arch
         - name: fedora-34
           dir: fedora34
-        #- name: ubuntu-20.04
-        #  dir: ubuntu-20.04
-    runs-on: ubuntu-22.04
+        - name: ubuntu-24.04
+          dir: ubuntu-24.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       packages: write
@@ -127,9 +127,9 @@ jobs:
         config:
         - name: arch-linux
         - name: fedora-34
-        #- name: ubuntu-20.04
+        - name: ubuntu-24.04
     needs: [generate_source_tarball, generate_docker_images]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/download-artifact@v4
       with:
